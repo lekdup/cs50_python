@@ -1,5 +1,8 @@
-# Ask use for their name
-user_name = input("What's your name? ").strip().title()
+def main():
+    name = input("What's your name? ")
+    hello(name)
 
-# Say hello to user
-print(f"hello, {user_name}")  
+def hello(to="world"):
+    print("hello,", to)
+
+main()
